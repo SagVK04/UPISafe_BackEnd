@@ -15,3 +15,6 @@ git lfs migrate import --include="fraud_detector.pkl" --everything
 
 Force push the rewritten history to the remote repository
 git push origin master --force
+
+Configure Git to automatically set up tracking for new branches
+git config --global push.autoSetupRemote true
