@@ -1,0 +1,17 @@
+Initialize the Git LFS extension on your local machine:
+git lfs install
+
+Display the current version of Git LFS to verify installation:
+git lfs version
+
+Tell Git LFS to manage all files ending in .pkl:
+git lfs track "*.pkl"
+
+Stage the attributes file that stores your LFS tracking rules: 
+git add .gitattributes
+
+Rewrite commit history to move existing large files into LFS storage:
+git lfs migrate import --include="fraud_detector.pkl" --everything
+
+Force push the rewritten history to the remote repository
+git push origin master --force
