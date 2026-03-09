@@ -1,0 +1,5 @@
+python3 -m venv myenv->
+
+macOS / Linux / Bash-->
+
+source myenv/bin/activate
